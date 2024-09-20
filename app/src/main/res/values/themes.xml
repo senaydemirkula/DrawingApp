@@ -1,0 +1,15 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.DrawingApp" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/lilac</item>
+        <item name="colorPrimaryVariant">@color/screen_1</item>
+        <item name="colorOnPrimary">@color/white</item>
+
+        <item name="colorSecondary">@color/screen_1</item>
+        <item name="colorSecondaryVariant">@color/dark_gray</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <item name="android:statusBarColor">@color/screen_1</item>
+    </style>
+
+    <style name="Theme.DrawingApp" parent="Base.Theme.DrawingApp" />
+</resources>

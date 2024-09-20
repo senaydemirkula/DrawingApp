@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DrawingActivity">
+
+    <!-- Drawing Area -->
+    <com.example.drawingapp.CanvasView
+        android:id="@+id/drawingCanvas"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/tools"
+        android:background="#FFFFFF" />
+
+    <!-- Toolbar -->
+    <LinearLayout
+        android:id="@+id/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:padding="10dp">
+
+        <!-- Color buttons -->
+        <!-- Kırmızı renk düğmesi -->
+        <Button
+            android:id="@+id/colorRed"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:backgroundTint="@android:color/holo_red_dark" />
+
+        <!-- Yeşil renk düğmesi -->
+        <Button
+            android:id="@+id/colorGreen"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:backgroundTint="@android:color/holo_green_dark" />
+
+        <!-- Mavi renk düğmesi -->
+        <Button
+            android:id="@+id/colorBlue"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:backgroundTint="@android:color/holo_blue_dark" />
+
+        <!-- Siyah renk düğmesi -->
+        <Button
+            android:id="@+id/colorBlack"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:backgroundTint="@android:color/black" />
+
+        <!-- Sarı renk düğmesi -->
+        <Button
+            android:id="@+id/colorYellow"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:backgroundTint="@android:color/holo_orange_light" />
+
+
+        <!-- Brush size buttons -->
+        <Button
+            android:id="@+id/brushSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Small" />
+
+        <Button
+            android:id="@+id/brushMedium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Medium" />
+
+        <Button
+            android:id="@+id/brushLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Large" />
+
+        <!-- Clear button -->
+        <Button
+            android:id="@+id/clearCanvas"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/baseline_delete_24"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

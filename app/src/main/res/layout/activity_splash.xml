@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <!-- Logo ImageView -->
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:src="@drawable/baseline_color_lens_24"
+        android:visibility="visible" />
+
+    <!-- App Name TextView -->
+    <TextView
+        android:id="@+id/appName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/purple"
+        android:gravity="center"
+        android:text="Drawing Pad"
+        android:textColor="@color/white"
+        android:textSize="30sp" />
+
+    <!-- Start Button -->
+    <Button
+        android:id="@+id/startButton"
+        android:layout_width="196dp"
+        android:layout_height="76dp"
+        android:layout_marginHorizontal="16dp"
+        android:fontFamily="sans-serif-condensed"
+        android:textSize="25sp"
+        android:text="Start Drawing"
+        android:textColor="@color/white" />
+</LinearLayout>
